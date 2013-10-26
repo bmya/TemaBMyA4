@@ -1131,6 +1131,7 @@ div.indent_right {
     padding-right:0 !important;
     padding-left:10px !important;
     padding-top:10px !important;
+    background-color: ##FFA500;
 }
 /* sitemap */
 
@@ -2350,10 +2351,11 @@ button, input[type=submit], input[type=reset], input[type=button], .button
     font-weight: normal;
     background-repeat: repeat-x;
     background-position: top;
-    padding-bottom: 1px;
+    /*padding-bottom: 1px;
     padding-right: 6px;
-    padding-left: 6px;
+    padding-left: 6px;*/
     vertical-align: middle;
+    padding: 2px 14px 3px 16px;
 }
 
 .pagination button, .pagination input[type=submit], .pagination input[type=reset], .pagination input[type=button], .pagination .button
@@ -3900,7 +3902,9 @@ ul#detailViewActions.clickMenu {
     -moz-border-radius: 1px;
     border-radius: 1px;
     vertical-align: bottom;
-    padding: 0 3px 0 10px;
+    /*padding: 0 3px 0 10px;*/
+    padding: -1px 8px 5px 8px!important;
+    
 }
 
 .selectActionsDisabled span {
@@ -8236,7 +8240,8 @@ ul.clickMenu>li, ul.SugarActionMenuIESub li {
 }
 
 a#create_link.utilsLink {
-    padding: 5px 8px 5px 8px;
+/*    padding: 5px 8px 5px 8px;*/
+	padding: 0px 12px 2px 13px;
     margin: 0 3px 0 3px;
     background: #ffffff; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
