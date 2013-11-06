@@ -8200,7 +8200,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 }
 
 ul.clickMenu>li, ul.SugarActionMenuIESub li {
-    margin: 0 3px 0 3px;
+    /*margin: 0 3px 0 3px;commmented Daniel*/
     padding: -3px 2px 5px 2px;
     background: #ffffff; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
