@@ -47,7 +47,9 @@
 	<div></div>
     <div></div>
 	<div style="width:320px;padding-top: 0px;float: right;padding-right: 10px;">
-		<img width="100" src="index.php?entryPoint=getImage&imageName=company_logo.png" />
+		<div style="float:left;"> 
+			<img width="100" src="index.php?entryPoint=getImage&imageName=company_logo.png" />
+		</div>
 		{include file="_globalLinks.tpl" theme_template=true}
 		{include file="_welcome.tpl" theme_template=true}
 	</div>

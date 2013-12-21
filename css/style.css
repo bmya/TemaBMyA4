@@ -8507,9 +8507,9 @@ ul#drop-nav ul li:hover {
     border-left:1px solid #565656;
 }
 .iconed {
-    padding: 5px 5px 2px 0px;
-    margin-left:5px;
-    float:left;
+	padding: 1px 5px 3px 1px;
+	margin-left: 5px;
+	float: left;
 }
 
 #search {
