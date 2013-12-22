@@ -46,7 +46,7 @@
     </div>
 	<div></div>
     <div></div>
-	<div style="width:320px;padding-top: 0px;float: right;padding-right: 10px;">
+	<div class="bmya_icon_photo">
 		<div style="float:left;"> 
 			<img height="32" src="index.php?entryPoint=getImage&imageName=company_logo.png" />
 		</div>

@@ -40,7 +40,7 @@
     <strong><a id="welcome_link" href='index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}'>{$CURRENT_USER}</a></strong>{if !empty($LOGOUT_LINK) && !empty($LOGOUT_LABEL)} [ <a id="logout_link" href='{$LOGOUT_LINK}' class='utilsLink'>{$LOGOUT_LABEL}</a> ]{/if}
 </div>
 *}
-        <div id="search">
+{*        <div id="search">
             <form name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
                 <input type="hidden" name="action" value="UnifiedSearch">
                 <input type="hidden" name="module" value="Home">
@@ -49,6 +49,6 @@
                 <!-- <input type="text" name="query_string" id="query_string" size="30" value="{$SEARCH}">-->
                 <input type="submit" class="button" value="">
             </form><br />
-        </div>
+        </div>*}
 {/if}
 

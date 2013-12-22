@@ -42,7 +42,26 @@
 
 /* from old default theme */
 /* MAIN NAV STYLES */
+@font-face {
+  font-family: mnmliconsRegular;
+/*  src: url("mnmliconsv21-webfont.eot") format("eot");
+  src: url("mnmliconsv21-webfont.woff") format("woff"); */
+  src: url('mnmliconsv21-webfont.ttf') format('truetype') active;
+/*  src: url("mnmliconsv21-webfont.svg") format("svg") active; */
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: EntypoRegular;
+/*  src: url("entypo-webfont.eot") format("eot");
+  src: url("entypo-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("entypo-webfont.woff") format("woff");*/
+  src: url('entypo-webfont.ttf') format('truetype') active;
+/*  src: url("entypo-webfont.svg") format("svg")*/
+  font-weight: normal;
+  font-style: normal;
+}
 
 .subDmenu {
     position:absolute;
@@ -1131,7 +1150,7 @@ div.indent_right {
     padding-right:0 !important;
     padding-left:10px !important;
     padding-top:10px !important;
-    background-color: ##FFA500;
+    background-color: #FFA500;
 }
 /* sitemap */
 
@@ -3950,7 +3969,7 @@ ul#detailViewActions.clickMenu {
 
 }
 #quickCreate ul.clickMenu li > span {
-    background: url('../../../../index.php?entryPoint=getImage&imageName=quick-create.png') no-repeat center center;
+    background: url('../../../../index.php?entryPoint=getImage&imageName=quickcreate.png') no-repeat center center;
     height: 43px;
     width: 50px;
 }
@@ -8066,6 +8085,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#121212',GradientType=0 ); /* IE6-8 */
     border-bottom:2px solid #f17e02;
     height:35px;
+    /* oe7-like */
+    background-image: linear-gradient(to bottom, #646060, #262626)!important;
 }
 
 /* Table CSS */
@@ -8814,8 +8835,13 @@ input[type=reset]:hover,
     border:1px solid #999;
 }
 
-.quick_create {
-    margin-top:5px;
+#quick_create{
+	font-family:"EntypoRegular" !important;
+	font-size: 21px;
+	font-weight: 300 !important;
+	height:12px;
+	width:12px;
+	margin-top:4px;	
 }
 
 img {
@@ -8999,4 +9025,24 @@ a#delete_listview_top:hover {
 }
 .yui-navset{
 	padding:2px!important;
+}
+.bmya_topbar_avatar {
+	/*padding: 1px 5px 3px 1px;*/
+        /*margin-left: 5px;*/
+        float: left;
+	width: 24px;
+	height: 24px;
+	margin: 0px 5px 0 0;
+	-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.bmya_icon_photo{
+	width:283px;
+	height:35px;
+	padding-top: 0px;
+	float: right;
+	padding-right: 10px;
+	background-image: linear-gradient(to bottom, #646060, #262626)!important;
+
 }

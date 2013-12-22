@@ -56,8 +56,20 @@
     {/foreach}
     </ul> *}
     <ul id="drop-nav">
-        <li> <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}"><img src="index.php?entryPoint=download&id={$CURRENT_USER_ID}&type=SugarFieldImage&isTempFile=1&isProfile=1" class="iconed" width="23"> {$CURRENT_USER}</a>
+        <li> <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}"><img src="index.php?entryPoint=download&id={$CURRENT_USER_ID}&type=SugarFieldImage&isTempFile=1&isProfile=1" class="bmya_topbar_avatar"> {$CURRENT_USER}</a>
             <ul>
+		<li>
+
+            <form name='UnifiedSearch' action='index.php' onsubmit='return SUGAR.unifiedSearchAdvanced.checkUsaAdvanced()'>
+                <input type="hidden" name="action" value="UnifiedSearch">
+                <input type="hidden" name="module" value="Home">
+                <input type="hidden" name="search_form" value="false">
+                <input type="hidden" name="advanced" value="false">
+                <input type="text" name="query_string" id="query_string" size="30" value="{$SEARCH}">
+                <input type="submit" class="button" value="Search">
+            </form>
+        
+		</li>
                 {foreach from=$GCLS item=GCL name=gcl key=gcl_key}
                     <li>
                         <a id="{$gcl_key}_link" href="{$GCL.URL}"{if !empty($GCL.ONCLICK)} onclick="{$GCL.ONCLICK}"{/if}>{$GCL.LABEL}</a>
@@ -69,7 +81,9 @@
         </li>
     </ul>
     <ul id="quick-nav">
-        <li> <a href="#"><img src="themes/Suite7/images/quickcreate.png" class="quick_create"></a>
+        <li><div id="quick_create">
+		 <a href="#">]</a>
+	</div>
             <ul>
                 <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">Create Account</a></li>
                 <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">Create Contact</a></li>
