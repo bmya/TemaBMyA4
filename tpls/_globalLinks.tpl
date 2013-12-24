@@ -56,7 +56,7 @@
     {/foreach}
     </ul> *}
     <ul id="drop-nav">
-        <li> <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}"><img src="index.php?entryPoint=download&id={$CURRENT_USER_ID}&type=SugarFieldImage&isTempFile=1&isProfile=1" class="bmya_topbar_avatar"> {$CURRENT_USER}</a>
+        <li> <a href="index.php?module=Users&action=EditView&record={$CURRENT_USER_ID}"><img src="index.php?entryPoint=download&id={$CURRENT_USER_ID}&type=SugarFieldImage&isTempFile=1&isProfile=1" class="bmya_topbar_avatar"> {$CURRENT_USER} <b class="caret"></b></a>
             <ul>
 		<li>
 
@@ -81,9 +81,8 @@
         </li>
     </ul>
     <ul id="quick-nav">
-        <li><div id="quick_create">
-		 <a href="#">]</a>
-	</div>
+        <li>
+		 <a href="#"><img src="themes/BMyA4/images/quickcreate.png" />&nbsp;<b class="caret"></b></a>&nbsp;
             <ul>
                 <li><a href="index.php?module=Accounts&action=EditView&return_module=Accounts&return_action=DetailView">Create Account</a></li>
                 <li><a href="index.php?module=Contacts&action=EditView&return_module=Contacts&return_action=DetailView">Create Contact</a></li>
