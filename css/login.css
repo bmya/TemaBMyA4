@@ -75,6 +75,9 @@ input[type="text"], input[type="password"], textarea {
 .loginBox {
     border: 1px solid #abc3d7;
     padding: 20px;
+	background: rgb(46, 42, 42);
+	-webkit-border-radius: 9px !important;
+}
 
 }
 
